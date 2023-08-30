@@ -1,0 +1,19 @@
+{
+  "name": "pos-electron-app",
+  "version": "0.0.1",
+  "description": "Cross platform for the POS project",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ./src/main.js"
+  },
+  "keywords": [
+    "electron",
+    "node"
+  ],
+  "author": "Jose Daniel Corredor Zambrano",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^26.1.0"
+  }
+}
