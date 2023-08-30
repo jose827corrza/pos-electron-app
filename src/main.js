@@ -8,7 +8,10 @@ const createWindow = () => {
         webPreferences: {
             preload: path.join(__dirname, '../src/preload/preload.js') // Will run this script before
             //To "attach"both renderer globals, window and document
-        }
+        },
+        center: true,
+        autoHideMenuBar: true,
+        title: 'POS'
     })
 
     // win.loadFile('./public/index.html')
