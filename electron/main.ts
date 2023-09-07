@@ -40,7 +40,8 @@ function createWindow() {
 }
 
 app.on('window-all-closed', () => {
-  win = null
+  // win = null
+  app.quit();
 })
 
 app.whenReady().then(createWindow)
