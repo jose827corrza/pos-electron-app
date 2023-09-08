@@ -1,18 +1,36 @@
 // import { useState } from 'react'
 import {useContext, useState} from 'react'
 
+// import 'dotenv/config'
+
 import { appContext } from './context/context'
 import { Layout } from './containers/Layout';
-import { LikeButton } from './components/LikeButton';
+import { LoginBox } from './pages/LoginBox'
+
+import {initFirebase } from './firebase/firebase'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Home } from './pages/Home';
+import { AddCustomer } from './pages/AddCustomer';
 
 function App() {
   // const [count, setCount] = useState(0)
-  const {incrementCount, count } = useContext(appContext);
+  const {incrementCount, count, Auth } = useContext(appContext);
+  const {app, auth} =initFirebase();
+  // console.log(app);
+  // console.log('*********');
+  // console.log(auth);
+  
   return (
     <>
-      {/* <Layout> */}
-        <LikeButton />
-      {/* </Layout> */}
+      <BrowserRouter>
+        <Layout>
+          <Routes>
+            <Route path='/' element={<LoginBox />}/>
+            <Route path='/home' element={<Home />}/>
+            <Route path='/add' element={<AddCustomer />}/>
+          </Routes>
+        </Layout>
+      </BrowserRouter>
     </>
   )
 }
