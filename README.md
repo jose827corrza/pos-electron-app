@@ -4,7 +4,7 @@
 
 # POS ELECTRON APP
 
-Repo for the project of updating the current version of the POS application, which ease the textile management for the business in San Victorino
+Repo for the project of updating the current version of the Point of Sale application, which ease the process of sales and gestion of stock of products  management for the comercial bussines.
 
 
 
