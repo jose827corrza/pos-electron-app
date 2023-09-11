@@ -5,7 +5,7 @@ export const loginUser = async(email: string, psswd: string) => {
     return await signInWithEmailAndPassword(auth, email, psswd)
         .then((userCredential) => {
             const user = userCredential.user;
-            // console.log(user);
+            console.log(user);
             return user
             // ...
         })

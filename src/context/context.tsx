@@ -11,12 +11,13 @@ export interface Context {
 }
 
 export interface Auth {
-  uid: string;
+  id: string;
 }
 
 
 
-export const appContext = createContext<{ uid: Context['uid'], setUserId: Context['setUserId'], Auth: Context['Auth'] ,count: Context['count'], toggleDarkMode?: Context['toggleDarkMode'], isDarkMode?: Context['isDarkMode'], incrementCount?: Context['incrementCount']} | null>(null);
+// export const appContext = createContext<{ uid: Context['uid'], setUserId: Context['setUserId'], Auth: Context['Auth'] ,count: Context['count'], toggleDarkMode?: Context['toggleDarkMode'], isDarkMode?: Context['isDarkMode'], incrementCount?: Context['incrementCount']} | null>(null);
+export const appContext = createContext< Context | null>(null);
 
 export const AppContextProvider:React.FC<React.ReactNode> = ({children}) => {
   const [isDarkMode, setIsDarkMode] = useState(false)

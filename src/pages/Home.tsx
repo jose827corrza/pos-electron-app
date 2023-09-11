@@ -1,7 +1,7 @@
 import { useContext, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 
-import { getStoreCustomers, getStoreCustomersByRef } from '../firebase/datastore'
+import { getStoreCustomersByRef, loadStoreCustomers } from '../firebase/datastore'
 import { appContext } from 'src/context/context';
 
 export const Home = () => {
@@ -10,11 +10,11 @@ export const Home = () => {
 
   useEffect(() => {
     (async() => {
-      const customers = await getStoreCustomers(uid)
       const customerRefs = await getStoreCustomersByRef(uid);
-      console.log(customers);
-      console.log('-------------');
+      const customers = await loadStoreCustomers(customerRefs);
       console.log(customerRefs);
+      console.log('-------------');
+      console.log(customers);
       
     })()
   },[uid])

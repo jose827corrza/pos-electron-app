@@ -27,8 +27,8 @@ export const LoginBox = () => {
                 draggable: true,
                 progress: undefined,
                 theme: "colored",
-              });
-            // console.log('Check your credentials');          
+              });   
+            return     
         }
         //TODO
         setUserId(result?.uid)

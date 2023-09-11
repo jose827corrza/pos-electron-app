@@ -2,30 +2,22 @@ import { getDocs, collection, doc, getDoc, setDoc, addDoc, updateDoc, arrayUnion
 
 import { dbStore as db } from './firebase'
 import { Customer } from './../types/customer';
+import { UserDocument } from 'src/types/firebase';
 
-export const getStoreCustomers = async(userId: string) => {
-    const storeCustomers: Customer[] = []
-    
-    const querySnapshot = await getDocs(collection(db, "users", userId, "customers-v2"));
-    querySnapshot.forEach((doc) => {
-        // console.log(`${doc.id} => ${doc.data()}`);
-        // console.log(`${doc.id} => ${doc.data().name}`);
-        const test = doc.data() as Customer;
-        storeCustomers.push(test)
-    });
-    return storeCustomers;
-}
+
 
 export const getStoreCustomersByRef = async(userId: string) => {
-
+  console.log(userId);
+  
   const customerReferences: string[] = []
 
   const docSnap = await getDoc(doc(db, 'users', userId));
     if (docSnap.exists()) {
-      // console.log("Document data:", docSnap.data().customers[1].path);
-      docSnap.data().customers.forEach(customer => {
+      console.log("Document data:", docSnap.data());
+      const customer = docSnap.data() as UserDocument;
+      customer.customers.forEach(customer => {
         customerReferences.push(customer.path)
-      });
+      })
     } else {
       // docSnap.data() will be undefined in this case
       console.log("No such document!");
@@ -44,12 +36,15 @@ export const loadStoreCustomers = async(storeCustomers: string[]) => {
     // }
     customers.push(docSnap.data() as Customer)
   });
+  return customers;
 }
 export const addCustomerToStoreList = async(usrId: string, customerId: string) => {
   //@ a given customer id, inserts it into the store customers reference array
-  const docRef = doc(db, 'users', usrId);
-  await updateDoc(docRef, {
-    customers: arrayUnion(`customers/${customerId}`)
+  const docRefUser = doc(db, 'users', usrId);
+  const docRefToInsert = doc(db, 'customers', customerId)
+  await updateDoc(docRefUser, {
+    // customers: arrayUnion(`customers/${customerId}`)
+    customers: arrayUnion(docRefToInsert)
   })
 };
 
