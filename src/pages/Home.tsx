@@ -21,6 +21,7 @@ export const Home = () => {
   return (
     <div>
       <Link to={'/add'}>Add new customer</Link>
+      <Link to={'/get-customers'}>Search a customer</Link>
     </div>
   )
 }
