@@ -11,6 +11,7 @@ import {initFirebase } from './firebase/firebase'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { AddCustomer } from './pages/AddCustomer';
+import { CustomersList } from './pages/CustomersList';
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -28,6 +29,7 @@ function App() {
             <Route path='/' element={<LoginBox />}/>
             <Route path='/home' element={<Home />}/>
             <Route path='/add' element={<AddCustomer />}/>
+            <Route path='/get-customers' element={<CustomersList />}/>
           </Routes>
         </Layout>
       </BrowserRouter>

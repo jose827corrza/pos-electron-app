@@ -1,4 +1,4 @@
-import { getDocs, collection, doc, getDoc, setDoc, addDoc, updateDoc, arrayUnion } from 'firebase/firestore';
+import { getDocs, collection, doc, getDoc, setDoc, addDoc, updateDoc, arrayUnion, arrayRemove, deleteDoc, DocumentReference } from 'firebase/firestore';
 
 import { dbStore as db } from './firebase'
 import { Customer } from './../types/customer';
@@ -93,4 +93,18 @@ export const addCustomerToStore = async(
   // await setDoc(doc(db, 'users', usrId, 'customers'), custData);
   await addDoc(collection(db, 'users', usrId, 'customers-v2'), custData)
 
+}
+
+export const deleteCustomerFromCustomerCollection = async(customerId: string) => {
+  const customerRef = doc(db, 'customers', customerId)
+  await deleteDoc(customerRef);
+  return customerId;
+}
+
+export const removeCustomerRefFromStoreCustomersArray = async(userId: string, customerReference: string) => {
+  const customerRef = doc(db, 'users', userId);
+
+  await updateDoc(customerRef, {
+    customers: arrayRemove(customerReference)
+  })
 }
