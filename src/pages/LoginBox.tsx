@@ -38,23 +38,31 @@ export const LoginBox = () => {
     }
     
   return (
-    <div>
-        <div className='flex '>
-            <label htmlFor="">Email</label>
-            <input 
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                />
-            <br />
-            <label htmlFor="">Password</label>
-            <input 
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                />
-            <br />
+    <div className="h-full flex items-center justify-center">
+        <div className="md:flex">
+            <div className="grid md:flex">
+                <label htmlFor="" className="font-sans">Correo Electronico</label>
+                <input 
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="mx-2 rounded-md placeholder:italic px-2 focus:outline-none"
+                    placeholder="Correo electronico"
+                    />
+            </div>
+            <div className="grid md:flex">
+                <label htmlFor="">Contrasena</label>
+                <input 
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    className="mx-2 rounded-md px-2 placeholder:italic focus:outline-none"
+                    placeholder="Contrasena"
+                    />
+            </div>
             <button
                 onClick={loginButton}
-                >Ingresar</button>
+                className="m-2 rounded-lg bg-lime-500 px-2 hover:bg-lime-400"
+                >Ingresar
+            </button>
         </div>
         <ToastContainer 
             position="bottom-center"

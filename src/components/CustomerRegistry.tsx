@@ -1,4 +1,4 @@
-import { HiOutlineTrash } from 'react-icons/hi';
+import { HiOutlineTrash, HiPencilAlt } from 'react-icons/hi';
 import { deleteCustomerFromCustomerCollection, removeCustomerRefFromStoreCustomersArray } from '../firebase/datastore';
 
 import { Customer } from "src/types/customer"
@@ -27,20 +27,27 @@ export const CustomerRegistry = ({name, documentId, mainAddress, cellPhone, emai
   }
 
   return (
-    <li className="flex px-3" key={documentId}>
-        <p className="font-bold">{documentId}</p>
-        <p>{name}</p>
-        <p>{mainAddress}</p>
-        <p>{cellPhone}</p>
-        <p>{secondaryAddress}</p>
-        <p>{state}</p>
-        <p>{email}</p>
-        <p>{city}</p>
-        <p>{mayor}</p>
-        <p>{phone}</p>
+    <tr>
+      <td className="font-bold">{documentId}</td>
+      <td >{name}</td>
+      <td >{cellPhone}</td>
+      <td >{city}</td>
+      <td >{mainAddress}</td>
+      <td >{secondaryAddress}</td>
+      <td >{state}</td>
+      <td >{phone}</td>
+      <td >{email}</td>
+      <td >{mayor}</td>
+      <td >
+        <button onClick={deleteAction}>
+          < HiPencilAlt />
+        </button>
+      </td>
+      <td >
         <button onClick={deleteAction}>
           < HiOutlineTrash />
         </button>
-    </li>
+      </td>
+    </tr>
   )
 }

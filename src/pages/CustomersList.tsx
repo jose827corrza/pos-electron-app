@@ -21,36 +21,57 @@ export const CustomersList = () => {
     
   return (
     <>
-    {
-        initialLoading ?
-        <Loading />
-        :
-        <div>
-            <h2>Lista de usuarios</h2>
-            <ul>
+            <h1 className="text-2xl">Lista de usuarios</h1>
+        <div className="w-full flex justify-center items-center">
+            <table className="border-collapse border border-slate-500 w-full">
+                <thead>
+                    <tr>
+                        <th  className="border border-slate-600">Documento</th>
+                        <th className="border border-slate-600">Nombre</th>
+                        <th className="border border-slate-600">Celular</th>
+                        <th className="border border-slate-600">Ciudad</th>
+                        <th className="border border-slate-600">Direccion</th>
+                        <th className="border border-slate-600">Direccion Secundaria</th>
+                        <th className="border border-slate-600">Departamento</th>
+                        <th className="border border-slate-600">Telefono</th>
+                        <th className="border border-slate-600">Correo</th>
+                        <th className="border border-slate-600">Mayor</th>
+                        <th className="border border-slate-600">Editar</th>
+                        <th className="border border-slate-600">Borrar</th>
+                    </tr>
+                </thead>
                 {
-                    customers.map( customer => 
-                            (
-                                < CustomerRegistry
-                                    key={customer.documentId}
-                                    name={customer.name} 
-                                    cellPhone={customer.cellPhone} 
-                                    city={customer.city} 
-                                    documentId={customer.documentId} 
-                                    email={customer.email} 
-                                    mainAddress={customer.mainAddress} 
-                                    secondaryAddress={customer.secondaryAddress} 
-                                    mayor={customer.mayor} 
-                                    phone={customer.phone} 
-                                    uid={uid} 
-                                    state={customer.state} />
+                    initialLoading ?
+                    <div className="w-full flex justify-center items-center">
+
+                        <Loading />
+                    </div>
+                    :
+                <tbody>
+                        {
+                            customers.map( customer => 
+                                (
+                                    < CustomerRegistry
+                                        key={customer.documentId}
+                                        name={customer.name} 
+                                        cellPhone={customer.cellPhone} 
+                                        city={customer.city} 
+                                        documentId={customer.documentId} 
+                                        email={customer.email} 
+                                        mainAddress={customer.mainAddress} 
+                                        secondaryAddress={customer.secondaryAddress} 
+                                        mayor={customer.mayor} 
+                                        phone={customer.phone} 
+                                        uid={uid} 
+                                        state={customer.state} />
+                                )
                             )
-                        )
+                        }
+                </tbody>
                 }
-            </ul>
-            <Link to={'/home'}> Regresar</Link>
+            </table>
         </div>
-    }
+            <Link to={'/home'}> Regresar</Link>
     </>
     
   )
