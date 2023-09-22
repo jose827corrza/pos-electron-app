@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { getStoreCustomersByRef, loadStoreCustomers } from 'src/firebase/datastore';
+import { getStoreCustomersByRef, loadStoreCustomers } from '../firebase/datastore';
 import { Customer } from 'src/types/customer';
 
 export const useLoadCustomers = (uid: string, loadingTime: number, ...args: any) => {

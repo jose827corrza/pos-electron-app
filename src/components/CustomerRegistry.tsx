@@ -1,5 +1,5 @@
 import { HiOutlineTrash } from 'react-icons/hi';
-import { deleteCustomerFromCustomerCollection, removeCustomerRefFromStoreCustomersArray } from 'src/firebase/datastore';
+import { deleteCustomerFromCustomerCollection, removeCustomerRefFromStoreCustomersArray } from '../firebase/datastore';
 
 import { Customer } from "src/types/customer"
 

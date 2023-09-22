@@ -4,7 +4,7 @@ import { ToastContainer, toast } from "react-toastify"
 import { useNavigate } from 'react-router-dom'
 
 import { loginUser } from "../firebase/auth"
-import { appContext } from "src/context/context"
+import { appContext } from "../context/context"
 
 export const LoginBox = () => {
 

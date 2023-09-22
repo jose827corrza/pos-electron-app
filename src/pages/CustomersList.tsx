@@ -1,7 +1,7 @@
 import { CustomerRegistry } from "../components/CustomerRegistry"
 import { useEffect, useContext, useState } from 'react';
-import { appContext } from "src/context/context";
-import { useLoadCustomers } from "src/hooks/useLoadCustomers";
+import { appContext } from "../context/context";
+import { useLoadCustomers } from "../hooks/useLoadCustomers";
 import { Loading } from "../components/Loading";
 import { Link } from "react-router-dom";
 

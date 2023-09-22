@@ -1,7 +1,7 @@
 import { useState, useContext } from "react"
 import { Link } from "react-router-dom";
-import { appContext } from "src/context/context"
-import { createCustomerInCsutomerCollection, addCustomerToStoreList } from "src/firebase/datastore";
+import { appContext } from "../context/context"
+import { createCustomerInCsutomerCollection, addCustomerToStoreList } from "../firebase/datastore";
 import { Customer } from "src/types/customer";
 
 
