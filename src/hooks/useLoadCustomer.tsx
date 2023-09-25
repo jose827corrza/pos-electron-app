@@ -10,11 +10,14 @@ export const useLoadCustomer = (uid: string, customerId: string | undefined, loa
     useEffect(() => {
         if(isLoading){
             (async() => {
+                console.log(`este id llega al hook ${customerId}`);
+                
                 if(customerId == undefined){
                     return undefined
                 }
-                const customerInfo = await getCustomerInformation(uid, customerId);
+                const customerInfo = await getCustomerInformation(customerId);
                 setCustomer(customerInfo);
+                
             })()
             setTimeout(() => {
                 setIsLoading(false)

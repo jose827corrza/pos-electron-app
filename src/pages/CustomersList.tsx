@@ -17,9 +17,6 @@ export const CustomersList = () => {
         }, 2000)
     }, [customers, customersRefs])
 
-  console.log(customers);
-  console.log('**');
-  console.log(customersRefs);
     
   return (
     <>

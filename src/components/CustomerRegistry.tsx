@@ -23,10 +23,9 @@ export const CustomerRegistry = ({name, documentId, mainAddress, cellPhone, emai
   const deleteAction = async() => {
     console.log(`Borrando customer ${customerRef}`);
     
-    const test = await deleteCustomerFromCustomerCollection(customerRef);
-    await removeCustomerRefFromStoreCustomersArray(uid, test)
+    await deleteCustomerFromCustomerCollection(customerRef);
+    await removeCustomerRefFromStoreCustomersArray(uid, customerRef)
   }
-
 
   return (
     <tr>
@@ -41,14 +40,14 @@ export const CustomerRegistry = ({name, documentId, mainAddress, cellPhone, emai
       <td className='border border-slate-700'>{email}</td>
       <td className='border border-slate-700'>{mayor}</td>
       <td className='border border-slate-700'>
-        <Link to={`/edit-customer/${documentId}`}>
+        <Link to={`/edit-customer/${customerRef}`}>
           < HiPencilAlt />
         </Link>
       </td>
       <td className='border border-slate-700'>
-        <button onClick={deleteAction}>
+        <Link onClick={deleteAction} to={'/get-customers'}>
           < HiOutlineTrash />
-        </button>
+        </Link>
       </td>
     </tr>
   )

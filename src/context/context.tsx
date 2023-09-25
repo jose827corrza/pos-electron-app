@@ -20,6 +20,7 @@ export interface Auth {
 export const appContext = createContext< Context | null>(null);
 
 export const AppContextProvider:React.FC<React.ReactNode> = ({children}) => {
+  
   const [isDarkMode, setIsDarkMode] = useState(false)
   const [count, setCount] = useState(0);
   const [uid, setUid] = useState('');

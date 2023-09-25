@@ -1,7 +1,7 @@
 import { useState, useContext, useEffect } from "react"
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { appContext } from "../context/context"
-import { createCustomerInCsutomerCollection, addCustomerToStoreList, getCustomerInformation } from "../firebase/datastore";
+import { createCustomerInCsutomerCollection, addCustomerToStoreList, getCustomerInformation, updateCustomer } from "../firebase/datastore";
 import { Customer } from "src/types/customer";
 import { useLoadCustomer } from "../hooks/useLoadCustomer";
 import { Loading } from "../components/Loading";
@@ -10,6 +10,8 @@ import { Loading } from "../components/Loading";
 export const AddCustomer = () => {
 
     const {customerId} = useParams();
+    const navigate = useNavigate();
+
     const { uid } = useContext(appContext);
 
     const [cellPhone, setCellPhone] = useState('')
@@ -35,7 +37,7 @@ export const AddCustomer = () => {
             if(customerId != undefined){
                 if(customer){
                     setDocumentId(customer.documentId)
-                    setEmail(customer?.email)
+                    setEmail(customer.email)
                     setCellPhone(customer.cellPhone);
                     setCity(customer.city);
                     setMainAddress(customer.mainAddress);
@@ -49,9 +51,8 @@ export const AddCustomer = () => {
         }, 2000)
         
         
-    },[customer,uid, customerId])
+    },[ customer])
 
-console.log(customerId);
 
     
 
@@ -68,8 +69,15 @@ console.log(customerId);
             phone,
             state
         }
-        const newCustId = await createCustomerInCsutomerCollection(custData, uid);
-        await addCustomerToStoreList(uid, newCustId);
+        
+        if(customerId != undefined) {
+            await updateCustomer(customerId, custData);
+            navigate('/home');
+        } else {
+            const newCustId = await createCustomerInCsutomerCollection(custData, uid);
+            await addCustomerToStoreList(uid, newCustId);
+            navigate('/home');
+        }
         //Set blank
         setCellPhone('');
         setCity('');

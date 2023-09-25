@@ -1,7 +1,6 @@
-// import { useState } from 'react'
-import {useContext, useState} from 'react'
+import {useContext} from 'react'
 
-// import 'dotenv/config'
+
 
 import { appContext } from './context/context'
 import { Layout } from './containers/Layout';
@@ -14,7 +13,6 @@ import { AddCustomer } from './pages/AddCustomer';
 import { CustomersList } from './pages/CustomersList';
 
 function App() {
-  // const [count, setCount] = useState(0)
   const {incrementCount, count, Auth } = useContext(appContext);
   const {app, auth} =initFirebase();
   

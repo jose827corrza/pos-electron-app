@@ -7,16 +7,13 @@ import { UserDocument } from '../types/firebase';
 
 
 export const getStoreCustomersByRef = async(userId: string) => {
-  console.log(userId);
   
   const customerReferences: string[] = []
 
   const docSnap = await getDoc(doc(db, 'users', userId));
     if (docSnap.exists()) {
-      console.log("Document data:", docSnap.data());
       const customer = docSnap.data() as UserDocument;
       customer.customers.forEach(customer => {
-        // console.log(customer);
         
         customerReferences.push(customer.id)
       })
@@ -24,7 +21,6 @@ export const getStoreCustomersByRef = async(userId: string) => {
       // docSnap.data() will be undefined in this case
       console.log("No such document!");
     }
-    // console.log(customerReferences);
     
     return customerReferences;
 }
@@ -46,7 +42,6 @@ export const loadStoreCustomers = async(storeCustomers: string[]) => {
     
     
   });
-  console.log(customers);
   return customers;
 }
 export const addCustomerToStoreList = async(usrId: string, customerId: string) => {
@@ -66,7 +61,6 @@ export const createCustomerInCsutomerCollection = async(customerData: Customer, 
   const docRef = doc(db, "users", userId);
   const docSnap = await getDoc(docRef);
   if (!docSnap.exists()) {
-    // console.log("Document data:", docSnap.data());
     //Crearlo
     const userRef = doc(db, 'users', userId);
     setDoc(userRef, {})
@@ -107,39 +101,38 @@ export const addCustomerToStore = async(
 }
 
 export const deleteCustomerFromCustomerCollection = async(customerId: string) => {
-  const customerRef = doc(db, customerId)
+  const customerRef = doc(db, 'customers',customerId)
   await deleteDoc(customerRef);
   return customerId;
 }
 
 export const removeCustomerRefFromStoreCustomersArray = async(userId: string, customerReference: string) => {
-  const customerRef = doc(db, 'users', userId);
-
-  await updateDoc(customerRef, {
-    customers: arrayRemove(customerReference)
+  const userRefRef = doc(db, 'users', userId);
+  const customerRef = doc(db, 'customers', customerReference)
+  await updateDoc(userRefRef, {
+    customers: arrayRemove(customerRef)
   })
 }
 
-export const getCustomerInformation = async(userId: string, customerId: string) => {
-  let  customer: Customer = {
-    cellPhone: '',
-    city: '',
-    documentId: '',
-    email: '',
-    mainAddress: '',
-    secondaryAddress: '',
-    mayor: '',
-    name: '',
-    phone: '',
-    state: ''
-  }
-  const q = query(collection(db, 'customers'), where('documentId', '==', customerId));
+export const getCustomerInformation = async( customerId: string) => {
+  
+  const customerRef = doc(db, 'customers', customerId);
 
-  const querySnapshot = await getDocs(q);
-  querySnapshot.forEach((doc) => {
-    // doc.data() is never undefined for query doc snapshots
-    console.log(doc.id, " => ", doc.data());
-    customer = doc.data() as Customer;
-  })
-  return customer;
+  const docSnap = await getDoc(customerRef);
+
+if (docSnap.exists()) {
+  console.log("Document data:", docSnap.data());
+  return docSnap.data() as Customer;
+} else {
+  // docSnap.data() will be undefined in this case
+  console.log("No such document!");
+  return undefined
+}
+
+}
+
+export const updateCustomer = async(customerId: string, customerInfo: Customer) => {
+  const customerRef = doc(db, 'customers', customerId);
+
+  await updateDoc(customerRef, {...customerInfo});
 }

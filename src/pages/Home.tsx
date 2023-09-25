@@ -5,7 +5,6 @@ import { getStoreCustomersByRef, loadStoreCustomers } from '../firebase/datastor
 import { appContext } from '../context/context';
 
 export const Home = () => {
-  const navigate = useNavigate();
   const { uid } = useContext(appContext);
 
   useEffect(() => {
