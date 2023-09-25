@@ -2,10 +2,9 @@ import { useContext, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 
 import { getStoreCustomersByRef, loadStoreCustomers } from '../firebase/datastore'
-import { appContext } from 'src/context/context';
+import { appContext } from '../context/context';
 
 export const Home = () => {
-  const navigate = useNavigate();
   const { uid } = useContext(appContext);
 
   useEffect(() => {

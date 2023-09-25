@@ -11,4 +11,9 @@ export interface Customer {
     state:string;
 }
 
+export interface  CustomerV2 {
+    customerInfo: Customer
+    customerRef: string
+}
+
 
