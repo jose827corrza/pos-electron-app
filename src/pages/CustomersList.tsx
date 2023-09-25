@@ -6,7 +6,7 @@ import { Loading } from "../components/Loading";
 import { Link } from "react-router-dom";
 
 export const CustomersList = () => {
-    const { uid } = useContext(appContext);
+    const { uid, auth } = useContext(appContext);
     // const [customers, setCustomers] = useState<Array<Customer>>([]);
     const [initialLoading, setInitialLoading] = useState(true)
     const loadingTime = 2000;
@@ -17,6 +17,7 @@ export const CustomersList = () => {
         }, 2000)
     }, [customers, customersRefs])
 
+    console.log(auth);
     
   return (
     <>

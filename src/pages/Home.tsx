@@ -5,7 +5,7 @@ import { getStoreCustomersByRef, loadStoreCustomers } from '../firebase/datastor
 import { appContext } from '../context/context';
 
 export const Home = () => {
-  const { uid } = useContext(appContext);
+  const { uid, auth } = useContext(appContext);
 
   useEffect(() => {
     (async() => {
@@ -14,13 +14,15 @@ export const Home = () => {
       console.log(customerRefs);
       console.log('-------------');
       console.log(customers);
+      // console.log(auth);
       
     })()
   },[uid])
   return (
-    <div>
-      <Link to={'/add'}>Add new customer</Link>
-      <Link to={'/get-customers'}>Search a customer</Link>
+    <div className='flex'>
+      <Link to={'/add'} className='px-3'>Add new customer</Link>
+      <Link to={'/get-customers'} className='px-3'>Search a customer</Link>
+      <Link to={'/my-profile'} className='px-3'>My Profile</Link>
     </div>
   )
 }
