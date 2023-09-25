@@ -7,6 +7,7 @@ export interface UserDocument {
 
 export type CustomerReference = {
     path: string;
+    id: string;
 }
 
 export interface CustomerDocument {

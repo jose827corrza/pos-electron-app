@@ -1,12 +1,15 @@
-import { useState, useContext } from "react"
-import { Link } from "react-router-dom";
+import { useState, useContext, useEffect } from "react"
+import { Link, useParams } from "react-router-dom";
 import { appContext } from "../context/context"
-import { createCustomerInCsutomerCollection, addCustomerToStoreList } from "../firebase/datastore";
+import { createCustomerInCsutomerCollection, addCustomerToStoreList, getCustomerInformation } from "../firebase/datastore";
 import { Customer } from "src/types/customer";
+import { useLoadCustomer } from "../hooks/useLoadCustomer";
+import { Loading } from "../components/Loading";
 
 
 export const AddCustomer = () => {
 
+    const {customerId} = useParams();
     const { uid } = useContext(appContext);
 
     const [cellPhone, setCellPhone] = useState('')
@@ -19,6 +22,38 @@ export const AddCustomer = () => {
     const [name, setName] = useState('')
     const [phone, setPhone] = useState('')
     const [state, setState] = useState('')
+
+
+    const loadingTime = 2000;
+    const [initialLoading, setInitialLoading] = useState(true)
+    // const [customerEdit, setCustomerEdit] = useState<Customer>()
+    const {customer} = useLoadCustomer(uid, customerId, loadingTime);
+    
+    useEffect(()=> {
+        setTimeout(() => {
+            setInitialLoading(false);
+            if(customerId != undefined){
+                if(customer){
+                    setDocumentId(customer.documentId)
+                    setEmail(customer?.email)
+                    setCellPhone(customer.cellPhone);
+                    setCity(customer.city);
+                    setMainAddress(customer.mainAddress);
+                    setSecondaryAddress(customer.secondaryAddress);
+                    setMayor(customer.mayor);
+                    setName(customer.name);
+                    setPhone(customer.phone);
+                    setState(customer.state);
+                }
+            }
+        }, 2000)
+        
+        
+    },[customer,uid, customerId])
+
+console.log(customerId);
+
+    
 
     const registryCustomer = async() => {
         const custData: Customer = {
@@ -49,7 +84,12 @@ export const AddCustomer = () => {
     }
 
   return (
-    <div className="h-full flex justify-center items-center">
+    <>
+        {
+            initialLoading ?
+            <Loading />
+            :
+            <div className="h-full flex justify-center items-center">
         <div className="w-1/2">
             <div className="grid md:flex md:justify-between py-2">
                 <label htmlFor="documentId">Documento</label>
@@ -61,6 +101,7 @@ export const AddCustomer = () => {
                     required={true}
                     className="mx-2 rounded-md placeholder:italic px-2 focus:outline-none"
                     placeholder="Documento"
+                    disabled={customer != undefined ? true : false}
                 />
             </div>
             <div className="grid md:flex md:justify-between py-2">
@@ -73,6 +114,7 @@ export const AddCustomer = () => {
                     required={true}
                     className="mx-2 rounded-md placeholder:italic px-2 focus:outline-none"
                     placeholder="Nombre y apellido"
+                    disabled={customer != undefined ? true : false}
                 />
             </div>
             <div className="grid md:flex md:justify-between py-2">
@@ -168,11 +210,13 @@ export const AddCustomer = () => {
                 <button 
                     onClick={registryCustomer}
                     className="m-2 rounded-lg bg-lime-500 px-2 hover:bg-lime-400"
-                    >Registrar
+                    >{customer != undefined ? 'Actualizar' : 'Crear'}
                 </button>
                 <Link to={'/home'}>Regresar a Casa</Link>
             </div>
         </div>
     </div>
+        }
+    </>
   )
 }

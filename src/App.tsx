@@ -17,9 +17,6 @@ function App() {
   // const [count, setCount] = useState(0)
   const {incrementCount, count, Auth } = useContext(appContext);
   const {app, auth} =initFirebase();
-  // console.log(app);
-  // console.log('*********');
-  // console.log(auth);
   
   return (
     <>
@@ -28,6 +25,7 @@ function App() {
           <Routes>
             <Route path='/' element={<LoginBox />}/>
             <Route path='/home' element={<Home />}/>
+            <Route path='/edit-customer/:customerId' element={<AddCustomer />}/>
             <Route path='/add' element={<AddCustomer />}/>
             <Route path='/get-customers' element={<CustomersList />}/>
           </Routes>

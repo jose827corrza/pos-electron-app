@@ -10,7 +10,6 @@ export const loginUser = async(email: string, psswd: string) => {
             // ...
         })
         .catch((error) => {
-            // console.log(error.message);
             return undefined
         });
 }

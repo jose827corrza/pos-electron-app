@@ -1,8 +1,8 @@
-import { getDocs, collection, doc, getDoc, setDoc, addDoc, updateDoc, arrayUnion, arrayRemove, deleteDoc, DocumentReference } from 'firebase/firestore';
+import { getDocs, collection, doc, getDoc, setDoc, addDoc, updateDoc, arrayUnion, arrayRemove, deleteDoc, DocumentReference, query, where } from 'firebase/firestore';
 
 import { dbStore as db } from './firebase'
-import { Customer } from './../types/customer';
-import { UserDocument } from 'src/types/firebase';
+import { Customer, CustomerV2 } from './../types/customer';
+import { UserDocument } from '../types/firebase';
 
 
 
@@ -16,26 +16,37 @@ export const getStoreCustomersByRef = async(userId: string) => {
       console.log("Document data:", docSnap.data());
       const customer = docSnap.data() as UserDocument;
       customer.customers.forEach(customer => {
-        customerReferences.push(customer.path)
+        // console.log(customer);
+        
+        customerReferences.push(customer.id)
       })
     } else {
       // docSnap.data() will be undefined in this case
       console.log("No such document!");
     }
+    // console.log(customerReferences);
+    
     return customerReferences;
 }
 
 export const loadStoreCustomers = async(storeCustomers: string[]) => {
-  const customers: Customer[] = []
+  // const customers: Customer[] = []
+  const customers: CustomerV2[] = []
 
   storeCustomers.forEach(async(customerRef) => {
-    const docRef = doc(db, customerRef )
+    const docRef = doc(db, 'customers', customerRef )
     const docSnap = await getDoc(docRef);
-    // const customer: Customer = {
-    //   name: docSnap.data().name
-    // }
-    customers.push(docSnap.data() as Customer)
+    
+    
+    const customerV2: CustomerV2 = {
+      customerInfo: docSnap.data() as Customer,
+      customerRef
+    }
+    customers.push(customerV2)
+    
+    
   });
+  console.log(customers);
   return customers;
 }
 export const addCustomerToStoreList = async(usrId: string, customerId: string) => {
@@ -96,7 +107,7 @@ export const addCustomerToStore = async(
 }
 
 export const deleteCustomerFromCustomerCollection = async(customerId: string) => {
-  const customerRef = doc(db, 'customers', customerId)
+  const customerRef = doc(db, customerId)
   await deleteDoc(customerRef);
   return customerId;
 }
@@ -107,4 +118,28 @@ export const removeCustomerRefFromStoreCustomersArray = async(userId: string, cu
   await updateDoc(customerRef, {
     customers: arrayRemove(customerReference)
   })
+}
+
+export const getCustomerInformation = async(userId: string, customerId: string) => {
+  let  customer: Customer = {
+    cellPhone: '',
+    city: '',
+    documentId: '',
+    email: '',
+    mainAddress: '',
+    secondaryAddress: '',
+    mayor: '',
+    name: '',
+    phone: '',
+    state: ''
+  }
+  const q = query(collection(db, 'customers'), where('documentId', '==', customerId));
+
+  const querySnapshot = await getDocs(q);
+  querySnapshot.forEach((doc) => {
+    // doc.data() is never undefined for query doc snapshots
+    console.log(doc.id, " => ", doc.data());
+    customer = doc.data() as Customer;
+  })
+  return customer;
 }

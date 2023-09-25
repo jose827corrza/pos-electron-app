@@ -1,7 +1,8 @@
 import { HiOutlineTrash, HiPencilAlt } from 'react-icons/hi';
 import { deleteCustomerFromCustomerCollection, removeCustomerRefFromStoreCustomersArray } from '../firebase/datastore';
 
-import { Customer } from "src/types/customer"
+
+import { Link } from 'react-router-dom';
 
 interface Props {
   name: string, 
@@ -15,35 +16,36 @@ interface Props {
   mayor: string, 
   phone: string,
   uid: string
-
+  customerRef: string
 }
-export const CustomerRegistry = ({name, documentId, mainAddress, cellPhone, email, secondaryAddress, state, city, mayor, phone, uid}: Props) => {
+export const CustomerRegistry = ({name, documentId, mainAddress, cellPhone, email, secondaryAddress, state, city, mayor, phone, uid, customerRef}: Props) => {
 
   const deleteAction = async() => {
-    console.log(`Borrando customer ${documentId}`);
+    console.log(`Borrando customer ${customerRef}`);
     
-    const test = await deleteCustomerFromCustomerCollection(documentId);
+    const test = await deleteCustomerFromCustomerCollection(customerRef);
     await removeCustomerRefFromStoreCustomersArray(uid, test)
   }
 
+
   return (
     <tr>
-      <td className="font-bold">{documentId}</td>
-      <td >{name}</td>
-      <td >{cellPhone}</td>
-      <td >{city}</td>
-      <td >{mainAddress}</td>
-      <td >{secondaryAddress}</td>
-      <td >{state}</td>
-      <td >{phone}</td>
-      <td >{email}</td>
-      <td >{mayor}</td>
-      <td >
-        <button onClick={deleteAction}>
+      <td className="font-bold border border-slate-700">{documentId}</td>
+      <td className='border border-slate-700'>{name}</td>
+      <td className='border border-slate-700'>{cellPhone}</td>
+      <td className='border border-slate-700'>{city}</td>
+      <td className='border border-slate-700'>{mainAddress}</td>
+      <td className='border border-slate-700'>{secondaryAddress}</td>
+      <td className='border border-slate-700'>{state}</td>
+      <td className='border border-slate-700'>{phone}</td>
+      <td className='border border-slate-700'>{email}</td>
+      <td className='border border-slate-700'>{mayor}</td>
+      <td className='border border-slate-700'>
+        <Link to={`/edit-customer/${documentId}`}>
           < HiPencilAlt />
-        </button>
+        </Link>
       </td>
-      <td >
+      <td className='border border-slate-700'>
         <button onClick={deleteAction}>
           < HiOutlineTrash />
         </button>

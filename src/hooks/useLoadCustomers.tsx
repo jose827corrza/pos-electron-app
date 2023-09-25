@@ -1,18 +1,20 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { getStoreCustomersByRef, loadStoreCustomers } from '../firebase/datastore';
-import { Customer } from 'src/types/customer';
+import { CustomerV2 } from '../types/customer';
 
 export const useLoadCustomers = (uid: string, loadingTime: number, ...args: any) => {
 
-    const [customers, setCustomers] = useState<Customer[]>([]);
+    const [customers, setCustomers] = useState<CustomerV2[]>([]);
+    const [customersRefs, setCustomersRefs] = useState<string[]>([]);
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         if(isLoading){
             (async() => {
-                const customerRefs = await getStoreCustomersByRef(uid);
-                const test = await loadStoreCustomers(customerRefs);
+                const customerR = await getStoreCustomersByRef(uid);
+                const test = await loadStoreCustomers(customerR);
                 setCustomers(test);
+                setCustomersRefs(customerR);
             })()
             setTimeout(() => {
                 setIsLoading(false)
@@ -23,5 +25,6 @@ export const useLoadCustomers = (uid: string, loadingTime: number, ...args: any)
     customers,
     isLoading,
     setIsLoading,
+    customersRefs,
   }
 }
