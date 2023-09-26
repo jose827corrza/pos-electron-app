@@ -1,3 +1,16 @@
+import { contextBridge, ipcRenderer } from "electron"
+import * as os from 'os'
+
+contextBridge.exposeInMainWorld('electron', {
+  osVersion: () => os.version(),
+  osArch: () => os.arch(),
+  path: () => os.homedir()
+})
+
+contextBridge.exposeInMainWorld('ipcRenderer', {
+  send: (channel, data) => ipcRenderer.send(channel, data),
+  on: (channel, callback) => ipcRenderer.on(channel, (event, ...args) => callback(...args))
+})
 
 function domReady(condition: DocumentReadyState[] = ['complete', 'interactive']) {
   return new Promise(resolve => {

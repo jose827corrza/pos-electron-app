@@ -8,6 +8,9 @@ import { appContext } from "../context/context"
 
 export const LoginBox = () => {
 
+    const electron = (window as any).electron;
+    const ipcRenderer = (window as any).ipcRenderer;
+
     const navigate = useNavigate();
 
     const [email, setEmail] = useState('')
@@ -15,6 +18,9 @@ export const LoginBox = () => {
     const { setUserId } = useContext(appContext)
 
     const loginButton = async() => {
+
+        ipcRenderer.send('login-info', {email, password})
+
         const result = await loginUser(email, password)
         if (result === undefined){
             toast('Check your credentials')
@@ -63,6 +69,9 @@ export const LoginBox = () => {
                 className="m-2 rounded-lg bg-lime-500 px-2 hover:bg-lime-400"
                 >Ingresar
             </button>
+            <div>
+                <h1>{electron.osVersion()}</h1>
+            </div>
         </div>
         <ToastContainer 
             position="bottom-center"

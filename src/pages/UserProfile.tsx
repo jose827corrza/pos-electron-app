@@ -7,6 +7,7 @@ import { updateUser } from '../firebase/auth';
 
 export const UserProfile = () => {
 
+
   const { auth } = useContext(appContext);
 
   const [isEdit, setIsEdit] = useState(false);
@@ -24,6 +25,7 @@ export const UserProfile = () => {
   
   const handleUploadImage = () => {
     //TODO
+    alert('subido')
   }
 
   const handleUpdateData = () => {
