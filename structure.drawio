@@ -1,190 +1,363 @@
 <mxfile host="65bd71144e">
-    <diagram id="6oinmaNRW_17YR1EAed1" name="Página-1">
-        <mxGraphModel dx="2260" dy="1124" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+    <diagram id="6oinmaNRW_17YR1EAed1" name="Base de datos">
+        <mxGraphModel dx="1883" dy="1312" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="43" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=24;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="3" target="14">
+                <mxCell id="43" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=24;startArrow=none;startFill=0;endArrow=classic;endFill=1;" parent="1" source="3" target="14" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="54" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=24;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="3" target="51">
+                <mxCell id="54" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=24;startArrow=none;startFill=0;endArrow=classic;endFill=1;" parent="1" source="3" target="51" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="1550" y="765"/>
+                            <mxPoint x="1505" y="765"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="3" value="Customers" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="1350" y="270" width="230" height="350" as="geometry">
+                    <mxGeometry x="1305" y="270" width="230" height="350" as="geometry">
                         <mxRectangle x="310" y="20" width="100" height="30" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="5" value="&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Type_id : Varchar (NotNull)&lt;br&gt;ID: Integer (Not Null / Primary Key)&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Dv_ID: Integer (Not Null / Primary Key)&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;Name_Brand: Varchar (Not Null) (50)&lt;br&gt;Last_name : varchar (50)&lt;br&gt;Country:&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;varchar (80)&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;Address_1 : Varchar (255)&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Address_2 : Varchar (255)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Telephone : Bigint&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Mobile: Bigint&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;Email: varchar (Not Null/Unique) (50)&lt;br&gt;City: Varchar (Not Null) (80)&lt;br&gt;State_c :&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Varchar (Not Null) (80)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;type_of_ taxpayer1: Varchar (Not Null) (255)&amp;nbsp;&lt;br&gt;&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;type_of_ taxpayer2: Varchar (Not Null) (255)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;type_of_ taxpayer3: Varchar (Not Null) (255)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Credit_check : Boolean (Hide)&lt;br&gt;Credit_q : Integer&lt;br&gt;property_customer :&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Varchar (Not Null) (80)&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;type_price :&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Varchar (80) (Por Mayor / Por Menor)&lt;br&gt;obs :&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Varchar (255)&lt;br&gt;Special_date: Date&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="3" vertex="1">
                     <mxGeometry y="30" width="230" height="310" as="geometry"/>
                 </mxCell>
-                <mxCell id="55" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;fontSize=24;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="6" target="50">
+                <mxCell id="55" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;fontSize=24;startArrow=none;startFill=0;endArrow=classic;endFill=1;" parent="1" source="6" target="50" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="280" y="880"/>
-                            <mxPoint x="1310" y="880"/>
+                            <mxPoint x="235" y="880"/>
+                            <mxPoint x="1265" y="880"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="6" value="Products or Services" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="140" y="460" width="280" height="390" as="geometry">
+                    <mxGeometry x="95" y="460" width="280" height="390" as="geometry">
                         <mxRectangle x="310" y="20" width="100" height="30" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="7" value="&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;StockCode: Varchar (Not Null / Primary Key)&lt;br&gt;Description: Varchar (Not Null) (100)&lt;br&gt;Group1 : varchar (80)&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Group2 : varchar (&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;80&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Group3 : varchar (&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;80&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Group4 : varchar (&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;80&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;Price_1 : Integer&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Price_2 :&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Integer&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Price_3 :&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Integer&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Price_4 :&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Integer&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Price_5 :&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Integer&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Unit_of_m : Varchar (50)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Taxes_name1 : V&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;archar (255)&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;Taxes_p1 : Double (%)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Taxes_name2&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;V&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;archar (255)&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;Taxes_p2 : Double&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;(%)&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Taxes_name3&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;V&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;archar (255)&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;Taxes_p3 : Double&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;(%)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Taxes_name4&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;V&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;archar (255)&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;Taxes_p4 : Double&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;(%)&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Point_of_reorder : Integer&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Average_cost: Bigint (Default) - Lo obtendremos de cada entrada-&lt;br&gt;registrada para sumar el inventario de la&amp;nbsp; bodega seleccionada&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;(Just Admin)&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;Profit_p :&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Double&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;(%) (Just Admin)&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="6" vertex="1">
                     <mxGeometry y="40" width="280" height="330" as="geometry"/>
                 </mxCell>
-                <mxCell id="11" value="Shipping" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="870" y="590" width="310" height="260" as="geometry">
+                <mxCell id="11" value="Shipping" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="825" y="590" width="310" height="260" as="geometry">
                         <mxRectangle x="310" y="20" width="100" height="30" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="12" value="&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;N_ship : Varchar&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;(Not Null / Primary Key)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Prefix_of_s : Char (8)&lt;br&gt;ID: Integer (Not Null / Primary Key)&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Name_Brand : Varchar (Not Null) (255) {Name_brand&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&amp;amp; &quot;&amp;nbsp; &quot; &amp;amp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&amp;nbsp;Last Name}&lt;br&gt;Country:&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;varchar (255)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;State_c :&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Varchar (Not Null) (255)&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;City: Varchar (Not Null) (255)&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;Address : Varchar (255)&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Telephone : Bigint {Telephone &amp;amp; &quot; / &quot; &amp;amp; Mobile}&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;Package :&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Varchar (80)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Q_pack : Integer&lt;br&gt;Insured_value: Bigint&lt;br&gt;Courier_name:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Varchar (80)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Role_user_ID: Varchar (20) {&quot;Canotis Cortes&quot;[Select] - &quot;SELLER025A&quot;[Value Inset]}&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;Shipping_date: Date&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Shipping_reg: Timestamp&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="11">
+                <mxCell id="12" value="&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;N_ship : Varchar&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;(Not Null / Primary Key)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Prefix_of_s : Char (8)&lt;br&gt;ID: Integer (Not Null / Primary Key)&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Name_Brand : Varchar (Not Null) (255) {Name_brand&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&amp;amp; &quot;&amp;nbsp; &quot; &amp;amp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&amp;nbsp;Last Name}&lt;br&gt;Country:&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;varchar (255)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;State_c :&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Varchar (Not Null) (255)&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;City: Varchar (Not Null) (255)&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;Address : Varchar (255)&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Telephone : Bigint {Telephone &amp;amp; &quot; / &quot; &amp;amp; Mobile}&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;Package :&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Varchar (80)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Q_pack : Integer&lt;br&gt;Insured_value: Bigint&lt;br&gt;Courier_name:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Varchar (80)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Role_user_ID: Varchar (20) {&quot;Canotis Cortes&quot;[Select] - &quot;SELLER025A&quot;[Value Inset]}&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;Shipping_date: Date&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Shipping_reg: Timestamp&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="11" vertex="1">
                     <mxGeometry y="30" width="310" height="230" as="geometry"/>
                 </mxCell>
-                <mxCell id="13" value="Money_Transfer" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="1070" y="80" width="280" height="180" as="geometry">
+                <mxCell id="13" value="Money_Transfer" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1025" y="80" width="280" height="180" as="geometry">
                         <mxRectangle x="310" y="20" width="100" height="30" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="14" value="&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;N_bill : Varchar&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;(Not Null / Primary Key)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Prefix_of_b : Char (8)&lt;br&gt;ID: Integer (Not Null / Primary Key)&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Name_Brand : Varchar (Not Null) (255) {Name_brand&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&amp;amp; &quot;&amp;nbsp; &quot; &amp;amp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&amp;nbsp;Last Name}&lt;br&gt;Bank :&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;varchar (50)&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;Value_of_transfer : Integer&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Number_transfer : Bigint&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Location_reg : Varchar (80)&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Check_transfer : Boolean&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Date_reg: Timestamp&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="13">
+                <mxCell id="14" value="&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;N_bill : Varchar&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;(Not Null / Primary Key)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Prefix_of_b : Char (8)&lt;br&gt;ID: Integer (Not Null / Primary Key)&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Name_Brand : Varchar (Not Null) (255) {Name_brand&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&amp;amp; &quot;&amp;nbsp; &quot; &amp;amp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&amp;nbsp;Last Name}&lt;br&gt;Bank :&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;varchar (50)&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;Value_of_transfer : Integer&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Number_transfer : Bigint&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Location_reg : Varchar (80)&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Check_transfer : Boolean&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Date_reg: Timestamp&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="13" vertex="1">
                     <mxGeometry y="30" width="280" height="150" as="geometry"/>
                 </mxCell>
-                <mxCell id="15" value="Registry" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="580" y="130" width="280" height="190" as="geometry">
+                <mxCell id="15" value="Registry" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="535" y="130" width="280" height="190" as="geometry">
                         <mxRectangle x="310" y="20" width="100" height="30" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="16" value="&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;N_bill : Varchar&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;(Not Null / Primary Key)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Prefix_of_b : Char (8)&lt;br&gt;Description_reg :&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Varchar (80)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Value_of_reg : Bigint&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Type_of_reg :&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Varchar (80)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;ID: Integer (Not Null / Primary Key)&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Name_Brand : Varchar (Not Null) (50) {Name_brand&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&amp;amp; &quot;&amp;nbsp; &quot; &amp;amp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&amp;nbsp;Last Name}&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Q_registry: Integer&lt;br&gt;Method_of_pay :&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Varchar (50)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Role_user_ID: Varchar (20) {&quot;Canotis Cortes&quot; - &quot;SELLER025A&quot;}&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Date_reg: Timestamp&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="15">
+                <mxCell id="16" value="&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;N_bill : Varchar&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;(Not Null / Primary Key)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Prefix_of_b : Char (8)&lt;br&gt;Description_reg :&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Varchar (80)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Value_of_reg : Bigint&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Type_of_reg :&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Varchar (80)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;ID: Integer (Not Null / Primary Key)&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Name_Brand : Varchar (Not Null) (50) {Name_brand&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&amp;amp; &quot;&amp;nbsp; &quot; &amp;amp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&amp;nbsp;Last Name}&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Q_registry: Integer&lt;br&gt;Method_of_pay :&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Varchar (50)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Role_user_ID: Varchar (20) {&quot;Canotis Cortes&quot; - &quot;SELLER025A&quot;}&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Date_reg: Timestamp&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="15" vertex="1">
                     <mxGeometry y="30" width="280" height="160" as="geometry"/>
                 </mxCell>
-                <mxCell id="17" value="Detail_Registration" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="910" y="370" width="280" height="160" as="geometry">
+                <mxCell id="17" value="Detail_Registration" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="865" y="370" width="280" height="160" as="geometry">
                         <mxRectangle x="310" y="20" width="100" height="30" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="18" value="&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;N_bill : Varchar&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;(Not Null / Primary Key)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Prefix_of_b : Char (8)&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;StockCode: Varchar (Not Null / Primary Key)&lt;/span&gt;&lt;br style=&quot;font-size: 8px;&quot;&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Description: Varchar (Not Null) (100)&lt;/span&gt;&lt;br style=&quot;font-size: 8px;&quot;&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Group1 : varchar (80)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Each_Q : Integer&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Unitary_price : Integer&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Total_e : Bigint&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Date_reg: Timestamp&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="17">
+                <mxCell id="18" value="&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;N_bill : Varchar&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;(Not Null / Primary Key)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Prefix_of_b : Char (8)&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;StockCode: Varchar (Not Null / Primary Key)&lt;/span&gt;&lt;br style=&quot;font-size: 8px;&quot;&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Description: Varchar (Not Null) (100)&lt;/span&gt;&lt;br style=&quot;font-size: 8px;&quot;&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Group1 : varchar (80)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Each_Q : Integer&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Unitary_price : Integer&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Total_e : Bigint&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Date_reg: Timestamp&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="17" vertex="1">
                     <mxGeometry y="30" width="280" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="23" value="Entry_Stock" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="510" y="390" width="280" height="210" as="geometry">
+                <mxCell id="23" value="Entry_Stock" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="465" y="390" width="280" height="210" as="geometry">
                         <mxRectangle x="310" y="20" width="100" height="30" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="24" value="&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;N_entry : Varchar&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;(Not Null / Primary Key)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Prefix_of_es : Char (8)&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;StockCode: Varchar (Not Null / Primary Key)&lt;/span&gt;&lt;br style=&quot;font-size: 8px;&quot;&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Description: Varchar (Not Null) (100)&lt;/span&gt;&lt;br style=&quot;font-size: 8px;&quot;&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Group1 : varchar (80)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Q_entry : Integer&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Cost_ps : Integer&lt;br&gt;Total_ps: Bigint&lt;br&gt;Warehouse_in : Varchar (50)&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Role_user_ID: Varchar (20) {&quot;Canotis Cortes&quot; - &quot;SELLER025A&quot;}&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;Shipping_date: Date&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Shipping_reg: Timestamp&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="23">
+                <mxCell id="24" value="&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;N_entry : Varchar&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;(Not Null / Primary Key)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Prefix_of_es : Char (8)&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;StockCode: Varchar (Not Null / Primary Key)&lt;/span&gt;&lt;br style=&quot;font-size: 8px;&quot;&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Description: Varchar (Not Null) (100)&lt;/span&gt;&lt;br style=&quot;font-size: 8px;&quot;&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Group1 : varchar (80)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Q_entry : Integer&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Cost_ps : Integer&lt;br&gt;Total_ps: Bigint&lt;br&gt;Warehouse_in : Varchar (50)&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Role_user_ID: Varchar (20) {&quot;Canotis Cortes&quot; - &quot;SELLER025A&quot;}&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;Shipping_date: Date&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Shipping_reg: Timestamp&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="23" vertex="1">
                     <mxGeometry y="30" width="280" height="180" as="geometry"/>
                 </mxCell>
-                <mxCell id="29" value="Users" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="180" y="110" width="230" height="280" as="geometry">
+                <mxCell id="29" value="Users" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="135" y="110" width="230" height="280" as="geometry">
                         <mxRectangle x="310" y="20" width="100" height="30" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="30" value="&lt;span style=&quot;font-size: 8px;&quot;&gt;User: Varchar&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;(Not Null / Primary Key)&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&amp;nbsp;(25)&lt;br&gt;Password_u:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Varchar (40)&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;Type_id : Varchar (NotNull)&lt;br&gt;ID: Integer (Not Null / Primary Key)&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Dv_ID: Integer (Not Null / Primary Key)&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;Name: Varchar (Not Null) (50)&lt;br&gt;Last_name : varchar (80)&lt;br&gt;Country:&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;varchar (80)&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;Address_1 : Varchar (255)&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Telephone : Bigint&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Mobile: Bigint&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;Email: Varchar&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&amp;nbsp;(Not Null &lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;) (50)&lt;br&gt;City: Varchar (Not Null) (80)&lt;br&gt;State_c :&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Varchar (Not Null) (80)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Type_of_ user: Varchar (Not Null) (80)&amp;nbsp;&lt;br&gt;Role_user_ID: Varchar (20) {&quot;SELLER025A&quot;&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&quot;SELLER002C&quot;}&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Special_date: Date&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="29">
+                <mxCell id="30" value="&lt;span style=&quot;font-size: 8px;&quot;&gt;User: Varchar&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;(Not Null / Primary Key)&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&amp;nbsp;(25)&lt;br&gt;Password_u:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Varchar (40)&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;Type_id : Varchar (NotNull)&lt;br&gt;ID: Integer (Not Null / Primary Key)&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Dv_ID: Integer (Not Null / Primary Key)&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;Name: Varchar (Not Null) (50)&lt;br&gt;Last_name : varchar (80)&lt;br&gt;Country:&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;varchar (80)&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;Address_1 : Varchar (255)&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Telephone : Bigint&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Mobile: Bigint&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;Email: Varchar&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&amp;nbsp;(Not Null &lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;) (50)&lt;br&gt;City: Varchar (Not Null) (80)&lt;br&gt;State_c :&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Varchar (Not Null) (80)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Type_of_ user: Varchar (Not Null) (80)&amp;nbsp;&lt;br&gt;Role_user_ID: Varchar (20) {&quot;SELLER025A&quot;&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&quot;SELLER002C&quot;}&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Special_date: Date&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="29" vertex="1">
                     <mxGeometry y="30" width="230" height="250" as="geometry"/>
                 </mxCell>
-                <mxCell id="34" value="Base de datos App PRO (POS)" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;" vertex="1" parent="1">
+                <mxCell id="34" value="Base de datos App PRO (POS)" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;" parent="1" vertex="1">
                     <mxGeometry x="620" y="30" width="360" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="35" value="Inventory_Movements" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="510" y="640" width="280" height="210" as="geometry">
+                <mxCell id="35" value="Inventory_Movements" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="465" y="640" width="280" height="210" as="geometry">
                         <mxRectangle x="310" y="20" width="100" height="30" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="36" value="&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;N_move : Varchar&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;(Not Null / Primary Key)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Prefix_of_im : Char (8)&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;StockCode: Varchar (Not Null / Primary Key)&lt;/span&gt;&lt;br style=&quot;font-size: 8px;&quot;&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Description: Varchar (Not Null) (100)&lt;/span&gt;&lt;br style=&quot;font-size: 8px;&quot;&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Group1 : varchar (80)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Q_,move : Integer&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Wharehouse_out: Varchar (50)&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Wharehouse_in: Varchar (50)&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Role_user_ID: Varchar (20) {&quot;Canotis Cortes&quot; - &quot;SELLER025A&quot;}&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;Shipping_date: Date&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Shipping_reg: Timestamp&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="35">
+                <mxCell id="36" value="&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;N_move : Varchar&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;(Not Null / Primary Key)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Prefix_of_im : Char (8)&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;StockCode: Varchar (Not Null / Primary Key)&lt;/span&gt;&lt;br style=&quot;font-size: 8px;&quot;&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Description: Varchar (Not Null) (100)&lt;/span&gt;&lt;br style=&quot;font-size: 8px;&quot;&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Group1 : varchar (80)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Q_,move : Integer&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Wharehouse_out: Varchar (50)&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Wharehouse_in: Varchar (50)&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Role_user_ID: Varchar (20) {&quot;Canotis Cortes&quot; - &quot;SELLER025A&quot;}&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;Shipping_date: Date&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Shipping_reg: Timestamp&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="35" vertex="1">
                     <mxGeometry y="30" width="280" height="180" as="geometry"/>
                 </mxCell>
-                <mxCell id="37" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;fontSize=24;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="16" target="17">
+                <mxCell id="37" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;fontSize=24;startArrow=none;startFill=0;endArrow=classic;endFill=1;" parent="1" source="16" target="17" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="38" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=24;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="16" target="14">
+                <mxCell id="38" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=24;startArrow=none;startFill=0;endArrow=classic;endFill=1;" parent="1" source="16" target="14" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="940" y="270"/>
-                            <mxPoint x="940" y="170"/>
+                            <mxPoint x="895" y="270"/>
+                            <mxPoint x="895" y="170"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="39" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=24;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="7" target="24">
+                <mxCell id="39" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=24;startArrow=none;startFill=0;endArrow=classic;endFill=1;" parent="1" source="7" target="24" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="40" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;fontSize=24;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="7" target="36">
+                <mxCell id="40" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;fontSize=24;startArrow=none;startFill=0;endArrow=classic;endFill=1;" parent="1" source="7" target="36" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="41" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=24;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="7" target="17">
+                <mxCell id="41" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=24;startArrow=none;startFill=0;endArrow=classic;endFill=1;" parent="1" source="7" target="17" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="480" y="490"/>
-                            <mxPoint x="480" y="340"/>
-                            <mxPoint x="1050" y="340"/>
+                            <mxPoint x="435" y="490"/>
+                            <mxPoint x="435" y="340"/>
+                            <mxPoint x="1005" y="340"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="42" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;fontSize=24;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="5" target="16">
+                <mxCell id="42" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;fontSize=24;startArrow=none;startFill=0;endArrow=classic;endFill=1;" parent="1" source="5" target="16" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="1220" y="550"/>
-                            <mxPoint x="1220" y="320"/>
-                            <mxPoint x="1040" y="320"/>
-                            <mxPoint x="1040" y="200"/>
+                            <mxPoint x="1175" y="550"/>
+                            <mxPoint x="1175" y="320"/>
+                            <mxPoint x="995" y="320"/>
+                            <mxPoint x="995" y="200"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="44" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=24;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="5" target="11">
+                <mxCell id="44" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=24;startArrow=none;startFill=0;endArrow=classic;endFill=1;" parent="1" source="5" target="11" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="1025" y="570"/>
+                            <mxPoint x="980" y="570"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="46" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;fontSize=24;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="30" target="16">
+                <mxCell id="46" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;fontSize=24;startArrow=none;startFill=0;endArrow=classic;endFill=1;" parent="1" source="30" target="16" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="47" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;fontSize=24;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="30" target="11">
+                <mxCell id="47" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;fontSize=24;startArrow=none;startFill=0;endArrow=classic;endFill=1;" parent="1" source="30" target="11" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="840" y="360"/>
-                            <mxPoint x="840" y="560"/>
-                            <mxPoint x="948" y="560"/>
+                            <mxPoint x="795" y="360"/>
+                            <mxPoint x="795" y="560"/>
+                            <mxPoint x="903" y="560"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="48" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;fontSize=24;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="30" target="24">
+                <mxCell id="48" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;fontSize=24;startArrow=none;startFill=0;endArrow=classic;endFill=1;" parent="1" source="30" target="24" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="450" y="265"/>
-                            <mxPoint x="450" y="465"/>
+                            <mxPoint x="405" y="265"/>
+                            <mxPoint x="405" y="465"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="49" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=24;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="30" target="36">
+                <mxCell id="49" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=24;startArrow=none;startFill=0;endArrow=classic;endFill=1;" parent="1" source="30" target="36" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="440" y="240"/>
-                            <mxPoint x="440" y="760"/>
+                            <mxPoint x="395" y="240"/>
+                            <mxPoint x="395" y="760"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="50" value="Purchase_Order" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="1240" y="645" width="280" height="215" as="geometry">
+                <mxCell id="50" value="Purchase_Order" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1195" y="645" width="280" height="215" as="geometry">
                         <mxRectangle x="310" y="20" width="100" height="30" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="51" value="&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;N_PO : Varchar&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;(Not Null / Primary Key)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Prefix_of_po : Char (8)&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;StockCode: Varchar (Not Null / Primary Key)&lt;/span&gt;&lt;br style=&quot;font-size: 8px;&quot;&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Description: Varchar (Not Null) (100)&lt;/span&gt;&lt;br style=&quot;font-size: 8px;&quot;&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Group1 : varchar (80)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Each_Q : Integer&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Unitary_price : Integer&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Total_e : Bigint&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;ID: Integer (Not Null / Primary Key)&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Name_Brand : Varchar (Not Null) (50) {Name_brand&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&amp;amp; &quot;&amp;nbsp; &quot; &amp;amp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&amp;nbsp;Last Name}&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Role_user_ID: Varchar (20) {&quot;Canotis Cortes&quot; - &quot;SELLER025A&quot;}&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Date_reg: Timestamp&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="50">
+                <mxCell id="51" value="&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;N_PO : Varchar&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;(Not Null / Primary Key)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Prefix_of_po : Char (8)&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;StockCode: Varchar (Not Null / Primary Key)&lt;/span&gt;&lt;br style=&quot;font-size: 8px;&quot;&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Description: Varchar (Not Null) (100)&lt;/span&gt;&lt;br style=&quot;font-size: 8px;&quot;&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Group1 : varchar (80)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Each_Q : Integer&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Unitary_price : Integer&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Total_e : Bigint&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;ID: Integer (Not Null / Primary Key)&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Name_Brand : Varchar (Not Null) (50) {Name_brand&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&amp;amp; &quot;&amp;nbsp; &quot; &amp;amp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&amp;nbsp;Last Name}&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Role_user_ID: Varchar (20) {&quot;Canotis Cortes&quot; - &quot;SELLER025A&quot;}&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;Date_reg: Timestamp&lt;/span&gt;&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="50" vertex="1">
                     <mxGeometry y="30" width="280" height="180" as="geometry"/>
                 </mxCell>
-                <mxCell id="53" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=24;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="30">
+                <mxCell id="53" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=24;startArrow=none;startFill=0;endArrow=classic;endFill=1;" parent="1" source="30" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="1380" y="860" as="targetPoint"/>
+                        <mxPoint x="1335" y="860" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="80" y="265"/>
-                            <mxPoint x="80" y="890"/>
-                            <mxPoint x="1380" y="890"/>
+                            <mxPoint x="65" y="265"/>
+                            <mxPoint x="65" y="890"/>
+                            <mxPoint x="1335" y="890"/>
                         </Array>
                     </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="MRgY8ph8caNuChz63WMF" name="Nav-bar">
+        <mxGraphModel dx="1883" dy="1312" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <UserObject label="VENTA" treeRoot="1" id="EkfM9Oq8g3CjC4eoW2Jf-1">
+                    <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};fontFamily=Montserrat;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMontserrat;" vertex="1" parent="1">
+                        <mxGeometry x="158" y="119" width="120" height="30" as="geometry"/>
+                    </mxCell>
+                </UserObject>
+                <mxCell id="EkfM9Oq8g3CjC4eoW2Jf-2" value="Registrar" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};fontFamily=Montserrat;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMontserrat;" vertex="1" parent="1">
+                    <mxGeometry x="238" y="169" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="EkfM9Oq8g3CjC4eoW2Jf-3" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startArrow=none;endArrow=none;rounded=0;curved=0;fontFamily=Garamond;" edge="1" parent="1" target="EkfM9Oq8g3CjC4eoW2Jf-2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="218" y="149" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="EkfM9Oq8g3CjC4eoW2Jf-4" value="Cotización" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};fontFamily=Montserrat;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMontserrat;" vertex="1" parent="1">
+                    <mxGeometry x="238" y="219" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="EkfM9Oq8g3CjC4eoW2Jf-5" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startArrow=none;endArrow=none;rounded=0;curved=0;fontFamily=Garamond;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="EkfM9Oq8g3CjC4eoW2Jf-4">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="288" y="199" as="sourcePoint"/>
+                        <mxPoint x="298" y="179" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <UserObject label="LISTA DE VENTAS" treeRoot="1" id="EkfM9Oq8g3CjC4eoW2Jf-6">
+                    <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};fontFamily=Montserrat;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMontserrat;" vertex="1" parent="1">
+                        <mxGeometry x="158" y="379" width="120" height="30" as="geometry"/>
+                    </mxCell>
+                </UserObject>
+                <mxCell id="EkfM9Oq8g3CjC4eoW2Jf-7" value="General" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};fontFamily=Montserrat;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMontserrat;" vertex="1" parent="1">
+                    <mxGeometry x="238" y="429" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="EkfM9Oq8g3CjC4eoW2Jf-8" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startArrow=none;endArrow=none;rounded=0;curved=0;fontFamily=Garamond;" edge="1" parent="1" target="EkfM9Oq8g3CjC4eoW2Jf-7">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="218" y="409" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="EkfM9Oq8g3CjC4eoW2Jf-9" value="Cartera" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};fontFamily=Montserrat;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMontserrat;" vertex="1" parent="1">
+                    <mxGeometry x="238" y="479" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="EkfM9Oq8g3CjC4eoW2Jf-10" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startArrow=none;endArrow=none;rounded=0;curved=0;fontFamily=Garamond;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="EkfM9Oq8g3CjC4eoW2Jf-9">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="288" y="459" as="sourcePoint"/>
+                        <mxPoint x="298" y="439" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="288" y="469"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <UserObject label="ENVÍOS" treeRoot="1" id="EkfM9Oq8g3CjC4eoW2Jf-11">
+                    <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};fontFamily=Montserrat;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMontserrat;" vertex="1" parent="1">
+                        <mxGeometry x="158" y="589" width="120" height="30" as="geometry"/>
+                    </mxCell>
+                </UserObject>
+                <mxCell id="EkfM9Oq8g3CjC4eoW2Jf-12" value="Cambios" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};fontFamily=Montserrat;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMontserrat;" vertex="1" parent="1">
+                    <mxGeometry x="238" y="269" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="EkfM9Oq8g3CjC4eoW2Jf-13" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startArrow=none;endArrow=none;rounded=0;curved=0;fontFamily=Garamond;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="EkfM9Oq8g3CjC4eoW2Jf-12">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="288" y="249" as="sourcePoint"/>
+                        <mxPoint x="298" y="229" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="EkfM9Oq8g3CjC4eoW2Jf-14" value="Consignaciones" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};fontFamily=Montserrat;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMontserrat;" vertex="1" parent="1">
+                    <mxGeometry x="238" y="319" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="EkfM9Oq8g3CjC4eoW2Jf-15" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startArrow=none;endArrow=none;rounded=0;curved=0;fontFamily=Garamond;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="EkfM9Oq8g3CjC4eoW2Jf-14">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="288" y="299" as="sourcePoint"/>
+                        <mxPoint x="298" y="279" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <UserObject label="PRODUCTOS" treeRoot="1" id="EkfM9Oq8g3CjC4eoW2Jf-16">
+                    <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};fontFamily=Montserrat;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMontserrat;" vertex="1" parent="1">
+                        <mxGeometry x="158" y="639" width="120" height="30" as="geometry"/>
+                    </mxCell>
+                </UserObject>
+                <UserObject label="CLIENTES" treeRoot="1" id="EkfM9Oq8g3CjC4eoW2Jf-17">
+                    <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};fontFamily=Montserrat;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMontserrat;" vertex="1" parent="1">
+                        <mxGeometry x="158" y="689" width="120" height="30" as="geometry"/>
+                    </mxCell>
+                </UserObject>
+                <mxCell id="EkfM9Oq8g3CjC4eoW2Jf-18" value="Copia de Documento" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};fontFamily=Montserrat;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMontserrat;" vertex="1" parent="1">
+                    <mxGeometry x="238" y="529" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="EkfM9Oq8g3CjC4eoW2Jf-19" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startArrow=none;endArrow=none;rounded=0;curved=0;fontFamily=Garamond;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="EkfM9Oq8g3CjC4eoW2Jf-18">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="288" y="509" as="sourcePoint"/>
+                        <mxPoint x="298" y="489" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="288" y="519"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <UserObject label="INVENTARIO" treeRoot="1" id="EkfM9Oq8g3CjC4eoW2Jf-20">
+                    <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};fontFamily=Montserrat;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMontserrat;" vertex="1" parent="1">
+                        <mxGeometry x="158" y="749" width="120" height="30" as="geometry"/>
+                    </mxCell>
+                </UserObject>
+                <mxCell id="EkfM9Oq8g3CjC4eoW2Jf-21" value="Cantidad en Bodega" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};fontFamily=Montserrat;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMontserrat;" vertex="1" parent="1">
+                    <mxGeometry x="238" y="799" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="EkfM9Oq8g3CjC4eoW2Jf-22" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startArrow=none;endArrow=none;rounded=0;curved=0;fontFamily=Garamond;" edge="1" parent="1" target="EkfM9Oq8g3CjC4eoW2Jf-21">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="218" y="779" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="EkfM9Oq8g3CjC4eoW2Jf-23" value="Arqueo de Caja" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};fontFamily=Montserrat;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMontserrat;" vertex="1" parent="1">
+                    <mxGeometry x="238" y="849" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="EkfM9Oq8g3CjC4eoW2Jf-24" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startArrow=none;endArrow=none;rounded=0;curved=0;fontFamily=Garamond;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="EkfM9Oq8g3CjC4eoW2Jf-23">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="288" y="829" as="sourcePoint"/>
+                        <mxPoint x="298" y="809" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="EkfM9Oq8g3CjC4eoW2Jf-25" value="Ajuste de Inventario" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};fontFamily=Montserrat;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMontserrat;" vertex="1" parent="1">
+                    <mxGeometry x="238" y="899" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="EkfM9Oq8g3CjC4eoW2Jf-26" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startArrow=none;endArrow=none;rounded=0;curved=0;fontFamily=Garamond;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="EkfM9Oq8g3CjC4eoW2Jf-25">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="288" y="879" as="sourcePoint"/>
+                        <mxPoint x="298" y="859" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="EkfM9Oq8g3CjC4eoW2Jf-27" value="Es la cara que se llama inventario" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};fontFamily=Montserrat;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMontserrat;" vertex="1" parent="1">
+                    <mxGeometry x="398" y="769" width="220" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="EkfM9Oq8g3CjC4eoW2Jf-28" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;fontFamily=Montserrat;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMontserrat;" edge="1" parent="1" target="EkfM9Oq8g3CjC4eoW2Jf-27">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="338" y="821" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="EkfM9Oq8g3CjC4eoW2Jf-29" value="Es la cara que se llama lista de ventas" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};fontFamily=Montserrat;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMontserrat;" vertex="1" parent="1">
+                    <mxGeometry x="373" y="389" width="270" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="EkfM9Oq8g3CjC4eoW2Jf-30" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;fontFamily=Montserrat;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMontserrat;" edge="1" parent="1" target="EkfM9Oq8g3CjC4eoW2Jf-29">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="338" y="441" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <UserObject label="EGRESOS" treeRoot="1" id="EkfM9Oq8g3CjC4eoW2Jf-31">
+                    <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};fontFamily=Montserrat;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMontserrat;" vertex="1" parent="1">
+                        <mxGeometry x="158" y="959" width="120" height="30" as="geometry"/>
+                    </mxCell>
+                </UserObject>
+                <UserObject label="BTN CONFIG" treeRoot="1" id="EkfM9Oq8g3CjC4eoW2Jf-32">
+                    <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};fontFamily=Montserrat;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMontserrat;" vertex="1" parent="1">
+                        <mxGeometry x="158" y="1010" width="120" height="30" as="geometry"/>
+                    </mxCell>
+                </UserObject>
+                <mxCell id="EkfM9Oq8g3CjC4eoW2Jf-33" value="* Configuración de Impresion (Ajustes de Tamaño (80mm ,50mm, Carta, 1/2 Carta)&lt;br&gt;*Agregar Resoluciones de Facturación&lt;br&gt;*Espacios predeterminados&lt;br&gt;* Modos de operación" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};fontFamily=Montserrat;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMontserrat;" vertex="1" parent="1">
+                    <mxGeometry x="323" y="950" width="370" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="EkfM9Oq8g3CjC4eoW2Jf-34" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;fontFamily=Montserrat;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMontserrat;" edge="1" parent="1" target="EkfM9Oq8g3CjC4eoW2Jf-33">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="278" y="1021" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="TK2XRp57EeRWROrDuIgy-1" value="Mapa de Navegación App PRO (POS)" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;" vertex="1" parent="1">
+                    <mxGeometry x="170" y="50" width="496" height="30" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
